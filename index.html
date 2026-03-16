@@ -18,12 +18,17 @@
 <header class="header">
   <div class="header__inner">
     <div class="header__logo">
-      <span class="header__logo-main">たなか歯科クリニック</span>
-      <span class="header__logo-sub">兵庫県たつの市｜歯学博士・老年歯科専門医</span>
+      <span class="header__logo-icon">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 2C10 2 6 6 6 10c0 3 1.5 5 3 7l7 13 7-13c1.5-2 3-4 3-7 0-4-4-8-10-8z" fill="#1a2744"/><path d="M13 10a3 3 0 106 0" stroke="#fff" stroke-width="2" fill="none"/></svg>
+      </span>
+      <div>
+        <span class="header__logo-main">たなか歯科クリニック</span>
+        <span class="header__logo-sub">兵庫県たつの市｜歯学博士・老年歯科専門医</span>
+      </div>
     </div>
     <div class="header__contact">
       <a href="tel:0791-64-6800" class="header__tel">
-        <span class="header__tel-icon">&#9742;</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a2744" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         <span class="header__tel-number">0791-64-6800</span>
       </a>
       <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--header">WEB予約</a>
@@ -35,9 +40,13 @@
   1. ヒーロービュー（FV）
 ======================================== -->
 <section class="hero" id="hero">
+  <div class="hero__bg-pattern"></div>
   <div class="hero__inner">
     <div class="hero__content">
-      <p class="hero__lead">兵庫県たつの市で、歯を失ってお悩みの方へ</p>
+      <p class="hero__lead">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        兵庫県たつの市で、歯を失ってお悩みの方へ
+      </p>
       <h1 class="hero__heading">
         大学病院で培った<br class="sp-only">診断力で、<br>
         あなたに合った<br class="sp-only">治療法を<br class="sp-only">見つけます。
@@ -47,14 +56,16 @@
         老年歯科<span class="marker">専門医・指導医</span>が、<br class="sp-only">一人ひとりに寄り添いご提案します。
       </p>
       <div class="hero__cta">
-        <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--lg">まずは無料相談を予約する</a>
+        <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--lg btn--pulse">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;vertical-align:middle;"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          まずは相談を予約する
+        </a>
         <p class="hero__cta-note">※ 初回カウンセリングは保険適用内で行えます</p>
       </div>
     </div>
     <div class="hero__image">
-      <!-- 院長のポートレート写真 -->
-      <div class="hero__image-placeholder" aria-label="院長 田中栄士の写真">
-        <span>院長写真</span>
+      <div class="hero__image-frame">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=800&fit=crop&crop=face" alt="たなか歯科クリニック 院長 田中栄士" loading="eager">
       </div>
       <div class="hero__badge">
         <span class="hero__badge-title">歯学博士</span>
@@ -63,6 +74,9 @@
       </div>
     </div>
   </div>
+  <div class="hero__wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64L60,58.7C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,64C1200,53,1320,43,1380,37.3L1440,32L1440,120L0,120Z" fill="#ffffff"/></svg>
+  </div>
 </section>
 
 <!-- ========================================
@@ -70,30 +84,43 @@
 ======================================== -->
 <section class="empathy" id="empathy">
   <div class="container">
+    <div class="section-label"><span>TROUBLES</span></div>
     <h2 class="section-heading">こんなお悩みは<br class="sp-only">ありませんか？</h2>
     <ul class="empathy__list">
       <li class="empathy__item">
-        <span class="empathy__icon">&#128549;</span>
+        <div class="empathy__icon-wrap empathy__icon-wrap--1">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="2"><path d="M12 2a10 10 0 00-7.07 17.07l1.42-1.42A8 8 0 1120 12"/><path d="M12 6v6l4 2"/></svg>
+        </div>
         <p>硬いものが<strong>噛めなくなった</strong>。好きだったお漬物やお煎餅が食べられない。</p>
       </li>
       <li class="empathy__item">
-        <span class="empathy__icon">&#128542;</span>
+        <div class="empathy__icon-wrap empathy__icon-wrap--2">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="2"><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r=".5" fill="#d6336c"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
         <p>入れ歯が<strong>合わなくて痛い</strong>。話している途中に外れそうで恥ずかしい。</p>
       </li>
       <li class="empathy__item">
-        <span class="empathy__icon">&#128532;</span>
+        <div class="empathy__icon-wrap empathy__icon-wrap--3">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
         <p>食事の<strong>味や温度がわからない</strong>。食べる楽しみがなくなってきた。</p>
       </li>
       <li class="empathy__item">
-        <span class="empathy__icon">&#128546;</span>
+        <div class="empathy__icon-wrap empathy__icon-wrap--4">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 15s1.5-2 4-2 4 2 4 2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
         <p><strong>人前で笑えない</strong>。歯がないことが気になり、外出が億劫になった。</p>
       </li>
       <li class="empathy__item">
-        <span class="empathy__icon">&#129300;</span>
+        <div class="empathy__icon-wrap empathy__icon-wrap--5">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
         <p>インプラントが良いと聞くけど、<strong>自分に合うのかわからない</strong>。</p>
       </li>
       <li class="empathy__item">
-        <span class="empathy__icon">&#128116;</span>
+        <div class="empathy__icon-wrap empathy__icon-wrap--6">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
         <p>高齢の親が<strong>食べる量が減ってきた</strong>。噛めないことが原因ではないか心配。</p>
       </li>
     </ul>
@@ -113,19 +140,13 @@
 ======================================== -->
 <section class="usp" id="usp">
   <div class="container">
-    <h2 class="section-heading">
-      設備だけでは、<br class="sp-only">正しい治療はできません。
-    </h2>
-    <p class="section-lead">
-      大切なのは<strong>「診断力」</strong>です。
-    </p>
+    <div class="section-label"><span>OUR APPROACH</span></div>
+    <h2 class="section-heading">設備だけでは、<br class="sp-only">正しい治療はできません。</h2>
+    <p class="section-lead">大切なのは<strong>「診断力」</strong>です。</p>
 
     <div class="usp__philosophy">
       <div class="usp__philosophy-image">
-        <!-- カウンセリング風景写真 -->
-        <div class="image-placeholder" aria-label="カウンセリング風景">
-          <span>カウンセリング写真</span>
-        </div>
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=600&fit=crop" alt="カウンセリング風景" style="border-radius:16px;width:100%;height:auto;">
       </div>
       <div class="usp__philosophy-text">
         <p>
@@ -136,16 +157,13 @@
           当院の院長・田中栄士は、<strong>大阪歯科大学附属病院で高齢者歯科の診療部長</strong>を務め、
           数多くの難症例に向き合ってきました。
         </p>
-        <p>
-          その経験から生まれた診療哲学が——
-        </p>
+        <p>その経験から生まれた診療哲学が——</p>
       </div>
     </div>
 
     <div class="usp__concept">
-      <h3 class="usp__concept-heading">
-        「小さな大学病院」
-      </h3>
+      <div class="usp__concept-deco"></div>
+      <h3 class="usp__concept-heading">「小さな大学病院」</h3>
       <p class="usp__concept-text">
         小回りのきく地域の診療所でありながら、<br class="pc-only">
         大学病院レベルの知識・設備・診断力を備える。<br>
@@ -155,23 +173,17 @@
 
     <div class="usp__features">
       <div class="usp__feature">
-        <div class="image-placeholder image-placeholder--sm" aria-label="歯科用CT">
-          <span>CT写真</span>
-        </div>
+        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&h=300&fit=crop" alt="歯科用CT">
         <h4>歯科用CT完備</h4>
         <p>顎の骨の状態を三次元で把握。インプラントや高度な治療の正確な計画に不可欠です。</p>
       </div>
       <div class="usp__feature">
-        <div class="image-placeholder image-placeholder--sm" aria-label="マイクロスコープ">
-          <span>マイクロスコープ写真</span>
-        </div>
+        <img src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=400&h=300&fit=crop" alt="マイクロスコープ">
         <h4>マイクロスコープ</h4>
         <p>肉眼の約20倍に拡大し、見落としのない精密な治療を実現します。</p>
       </div>
       <div class="usp__feature">
-        <div class="image-placeholder image-placeholder--sm" aria-label="嚥下内視鏡（VE検査）">
-          <span>VE検査写真</span>
-        </div>
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=300&fit=crop" alt="嚥下内視鏡（VE検査）">
         <h4>嚥下内視鏡（VE検査）</h4>
         <p>「飲み込む力」を検査できる設備を備えた、地域でも数少ない歯科医院です。</p>
       </div>
@@ -184,9 +196,8 @@
 ======================================== -->
 <section class="comparison" id="comparison">
   <div class="container">
-    <h2 class="section-heading">
-      歯を失ったとき、<br class="sp-only">治療法は3つあります。
-    </h2>
+    <div class="section-label"><span>TREATMENT</span></div>
+    <h2 class="section-heading">歯を失ったとき、<br class="sp-only">治療法は3つあります。</h2>
     <p class="section-lead">
       それぞれにメリット・デメリットがあり、<br class="sp-only">「誰にでもベストな治療法」はありません。<br>
       大切なのは、あなたの身体の状態・生活スタイル・ご希望に合った方法を選ぶことです。
@@ -195,19 +206,25 @@
     <!-- インプラント -->
     <div class="treatment" id="implant">
       <div class="treatment__header treatment__header--implant">
-        <span class="treatment__number">01</span>
-        <h3 class="treatment__title">インプラント</h3>
-        <p class="treatment__summary">顎の骨に人工の歯根を埋め込み、その上に人工歯を装着する方法</p>
+        <div class="treatment__header-icon">
+          <svg width="48" height="48" viewBox="0 0 56 56" fill="none"><rect x="24" y="4" width="8" height="20" rx="4" fill="rgba(255,255,255,0.3)"/><rect x="22" y="24" width="12" height="4" rx="1" fill="rgba(255,255,255,0.25)"/><path d="M24 28h8l2 24H22l2-24z" fill="rgba(255,255,255,0.2)"/></svg>
+        </div>
+        <div>
+          <span class="treatment__number">01</span>
+          <h3 class="treatment__title">インプラント</h3>
+          <p class="treatment__summary">顎の骨に人工の歯根を埋め込み、その上に人工歯を装着する方法</p>
+        </div>
       </div>
       <div class="treatment__body">
         <div class="treatment__image">
-          <div class="image-placeholder" aria-label="インプラントの模型写真">
-            <span>インプラント写真</span>
-          </div>
+          <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=560&h=420&fit=crop" alt="インプラント治療のイメージ" style="border-radius:12px;">
         </div>
         <div class="treatment__details">
           <div class="treatment__merit">
-            <h4 class="treatment__label treatment__label--merit">メリット</h4>
+            <h4 class="treatment__label treatment__label--merit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b8a3e" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              メリット
+            </h4>
             <ul>
               <li><strong>天然の歯に近い噛み心地</strong>で、硬いものもしっかり噛める</li>
               <li>周囲の健康な歯を削る必要がない</li>
@@ -217,7 +234,10 @@
             </ul>
           </div>
           <div class="treatment__demerit">
-            <h4 class="treatment__label treatment__label--demerit">デメリット</h4>
+            <h4 class="treatment__label treatment__label--demerit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c92a2a" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              デメリット
+            </h4>
             <ul>
               <li>外科手術が必要（持病や服薬状況によっては適応できない場合がある）</li>
               <li>治療期間が比較的長い（通常3〜6ヶ月程度）</li>
@@ -227,7 +247,8 @@
           </div>
           <div class="treatment__tanaka-point">
             <h4 class="treatment__label treatment__label--point">
-              <span class="treatment__label-icon">&#9733;</span> 当院ならではの視点
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#fab005" stroke="#fab005" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              当院ならではの視点
             </h4>
             <p>
               院長は大学病院で全身疾患をお持ちの高齢患者様のインプラント治療にも多く携わってきました。
@@ -243,19 +264,25 @@
     <!-- 入れ歯 -->
     <div class="treatment" id="denture">
       <div class="treatment__header treatment__header--denture">
-        <span class="treatment__number">02</span>
-        <h3 class="treatment__title">入れ歯（義歯）</h3>
-        <p class="treatment__summary">取り外し可能な人工歯。部分入れ歯と総入れ歯があります</p>
+        <div class="treatment__header-icon">
+          <svg width="48" height="48" viewBox="0 0 56 56" fill="none"><path d="M8 28c0-10 8-18 20-18s20 8 20 18" stroke="rgba(255,255,255,0.3)" stroke-width="3" fill="none"/><path d="M12 28h32v4c0 8-7 14-16 14S12 40 12 32v-4z" fill="rgba(255,255,255,0.2)"/><rect x="16" y="26" width="4" height="8" rx="2" fill="rgba(255,255,255,0.3)"/><rect x="22" y="26" width="4" height="8" rx="2" fill="rgba(255,255,255,0.3)"/><rect x="28" y="26" width="4" height="8" rx="2" fill="rgba(255,255,255,0.3)"/><rect x="34" y="26" width="4" height="8" rx="2" fill="rgba(255,255,255,0.3)"/></svg>
+        </div>
+        <div>
+          <span class="treatment__number">02</span>
+          <h3 class="treatment__title">入れ歯（義歯）</h3>
+          <p class="treatment__summary">取り外し可能な人工歯。部分入れ歯と総入れ歯があります</p>
+        </div>
       </div>
       <div class="treatment__body">
         <div class="treatment__image">
-          <div class="image-placeholder" aria-label="精密義歯の写真">
-            <span>入れ歯写真</span>
-          </div>
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=560&h=420&fit=crop" alt="入れ歯治療のイメージ" style="border-radius:12px;">
         </div>
         <div class="treatment__details">
           <div class="treatment__merit">
-            <h4 class="treatment__label treatment__label--merit">メリット</h4>
+            <h4 class="treatment__label treatment__label--merit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b8a3e" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              メリット
+            </h4>
             <ul>
               <li>外科手術が不要で、<strong>全身疾患のある方にも対応</strong>しやすい</li>
               <li>保険適用の選択肢があり、費用を抑えられる</li>
@@ -265,7 +292,10 @@
             </ul>
           </div>
           <div class="treatment__demerit">
-            <h4 class="treatment__label treatment__label--demerit">デメリット</h4>
+            <h4 class="treatment__label treatment__label--demerit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c92a2a" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              デメリット
+            </h4>
             <ul>
               <li>噛む力はインプラントや天然歯より弱くなりやすい</li>
               <li>保険の入れ歯では、味や温度を感じにくいことがある</li>
@@ -275,7 +305,8 @@
           </div>
           <div class="treatment__tanaka-point">
             <h4 class="treatment__label treatment__label--point">
-              <span class="treatment__label-icon">&#9733;</span> 当院ならではの視点
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#fab005" stroke="#fab005" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              当院ならではの視点
             </h4>
             <p>
               老年歯科の専門医として、入れ歯の可能性を熟知しています。
@@ -292,19 +323,25 @@
     <!-- ブリッジ -->
     <div class="treatment" id="bridge">
       <div class="treatment__header treatment__header--bridge">
-        <span class="treatment__number">03</span>
-        <h3 class="treatment__title">ブリッジ</h3>
-        <p class="treatment__summary">失った歯の両隣の歯を支えにして、橋のように人工歯をかぶせる方法</p>
+        <div class="treatment__header-icon">
+          <svg width="48" height="48" viewBox="0 0 56 56" fill="none"><rect x="6" y="12" width="10" height="32" rx="5" fill="rgba(255,255,255,0.25)"/><rect x="40" y="12" width="10" height="32" rx="5" fill="rgba(255,255,255,0.25)"/><rect x="18" y="16" width="8" height="16" rx="4" fill="rgba(255,255,255,0.2)"/><rect x="28" y="16" width="8" height="16" rx="4" fill="rgba(255,255,255,0.2)"/><rect x="6" y="12" width="44" height="6" rx="3" fill="rgba(255,255,255,0.3)"/></svg>
+        </div>
+        <div>
+          <span class="treatment__number">03</span>
+          <h3 class="treatment__title">ブリッジ</h3>
+          <p class="treatment__summary">失った歯の両隣の歯を支えにして、橋のように人工歯をかぶせる方法</p>
+        </div>
       </div>
       <div class="treatment__body">
         <div class="treatment__image">
-          <div class="image-placeholder" aria-label="ブリッジの模型写真">
-            <span>ブリッジ写真</span>
-          </div>
+          <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=560&h=420&fit=crop" alt="ブリッジ治療のイメージ" style="border-radius:12px;">
         </div>
         <div class="treatment__details">
           <div class="treatment__merit">
-            <h4 class="treatment__label treatment__label--merit">メリット</h4>
+            <h4 class="treatment__label treatment__label--merit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b8a3e" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              メリット
+            </h4>
             <ul>
               <li>固定式のため、入れ歯のような違和感が少ない</li>
               <li>外科手術が不要</li>
@@ -314,7 +351,10 @@
             </ul>
           </div>
           <div class="treatment__demerit">
-            <h4 class="treatment__label treatment__label--demerit">デメリット</h4>
+            <h4 class="treatment__label treatment__label--demerit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c92a2a" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              デメリット
+            </h4>
             <ul>
               <li><strong>隣の健康な歯を削る必要</strong>がある</li>
               <li>支えとなる歯に負担がかかり、将来的にその歯を失うリスクがある</li>
@@ -324,7 +364,8 @@
           </div>
           <div class="treatment__tanaka-point">
             <h4 class="treatment__label treatment__label--point">
-              <span class="treatment__label-icon">&#9733;</span> 当院ならではの視点
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#fab005" stroke="#fab005" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              当院ならではの視点
             </h4>
             <p>
               マイクロスコープを活用した精密な治療により、支えとなる歯をできるだけ守る設計を心がけています。
@@ -353,27 +394,27 @@
           <tbody>
             <tr>
               <th>噛む力</th>
-              <td><span class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>天然歯に近い</td>
-              <td><span class="rating">&#9733;&#9733;&#9733;</span><br>やや弱い</td>
-              <td><span class="rating">&#9733;&#9733;&#9733;&#9733;</span><br>比較的良い</td>
+              <td><span class="rating rating--5"></span><br>天然歯に近い</td>
+              <td><span class="rating rating--3"></span><br>やや弱い</td>
+              <td><span class="rating rating--4"></span><br>比較的良い</td>
             </tr>
             <tr>
               <th>見た目</th>
-              <td><span class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>自然</td>
-              <td><span class="rating">&#9733;&#9733;&#9733;</span><br>種類による</td>
-              <td><span class="rating">&#9733;&#9733;&#9733;&#9733;</span><br>比較的自然</td>
+              <td><span class="rating rating--5"></span><br>自然</td>
+              <td><span class="rating rating--3"></span><br>種類による</td>
+              <td><span class="rating rating--4"></span><br>比較的自然</td>
             </tr>
             <tr>
               <th>他の歯への影響</th>
-              <td>削らない</td>
+              <td><span class="badge badge--good">削らない</span></td>
               <td>バネをかける歯に<br>負担あり</td>
-              <td>両隣の歯を<br>削る必要あり</td>
+              <td><span class="badge badge--warn">両隣の歯を削る</span></td>
             </tr>
             <tr>
               <th>手術</th>
-              <td>必要</td>
-              <td>不要</td>
-              <td>不要</td>
+              <td><span class="badge badge--warn">必要</span></td>
+              <td><span class="badge badge--good">不要</span></td>
+              <td><span class="badge badge--good">不要</span></td>
             </tr>
             <tr>
               <th>治療期間</th>
@@ -382,16 +423,16 @@
               <td>2〜3週間程度</td>
             </tr>
             <tr>
-              <th>味・温度の感じやすさ</th>
-              <td>自然に感じる</td>
+              <th>味・温度の<br>感じやすさ</th>
+              <td><span class="badge badge--good">自然に感じる</span></td>
               <td>保険：感じにくい<br>自費：改善可能</td>
-              <td>自然に感じる</td>
+              <td><span class="badge badge--good">自然に感じる</span></td>
             </tr>
             <tr>
               <th>費用</th>
               <td>自費のみ</td>
-              <td>保険・自費どちらも可</td>
-              <td>保険・自費どちらも可</td>
+              <td><span class="badge badge--good">保険・自費<br>どちらも可</span></td>
+              <td><span class="badge badge--good">保険・自費<br>どちらも可</span></td>
             </tr>
             <tr>
               <th>認知機能への影響<br><small>（咀嚼による脳への刺激）</small></th>
@@ -401,9 +442,9 @@
             </tr>
             <tr>
               <th>誤嚥リスクへの配慮</th>
-              <td>固定式のため<br>誤嚥リスク低</td>
-              <td>外れた場合の<br>リスクに注意</td>
-              <td>固定式のため<br>誤嚥リスク低</td>
+              <td><span class="badge badge--good">固定式で低</span></td>
+              <td><span class="badge badge--warn">外れた場合注意</span></td>
+              <td><span class="badge badge--good">固定式で低</span></td>
             </tr>
           </tbody>
         </table>
@@ -416,7 +457,7 @@
         <strong>どの治療法が自分に合うのか、わからなくて当然です。</strong><br>
         まずは専門医に相談してみませんか？
       </p>
-      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--lg">無料相談を予約する</a>
+      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--lg btn--pulse">相談を予約する</a>
     </div>
   </div>
 </section>
@@ -426,9 +467,8 @@
 ======================================== -->
 <section class="options" id="options">
   <div class="container">
-    <h2 class="section-heading">
-      「噛める」だけでなく、<br class="sp-only">「美味しく食べる」ための<br class="sp-only">選択肢。
-    </h2>
+    <div class="section-label"><span>PREMIUM OPTIONS</span></div>
+    <h2 class="section-heading">「噛める」だけでなく、<br class="sp-only">「美味しく食べる」ための<br class="sp-only">選択肢。</h2>
     <p class="section-lead">
       保険診療では実現しにくい<strong>快適さ・自然さ・耐久性</strong>を追求した、<br class="pc-only">
       当院の高度な自費診療オプションをご紹介します。
@@ -436,8 +476,8 @@
 
     <div class="options__grid">
       <div class="option-card">
-        <div class="image-placeholder image-placeholder--md" aria-label="金・プラチナ合金義歯">
-          <span>金・プラチナ義歯写真</span>
+        <div class="option-card__icon" style="background: linear-gradient(135deg, #f7d794, #f5cd79);">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7c5e10" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
         </div>
         <h3 class="option-card__title">金・プラチナ合金義歯</h3>
         <p class="option-card__text">
@@ -445,10 +485,9 @@
           精密な適合が得られやすく、<strong>長期間にわたって安定したフィット感</strong>が期待できます。
         </p>
       </div>
-
       <div class="option-card">
-        <div class="image-placeholder image-placeholder--md" aria-label="ステンレスメッシュ義歯">
-          <span>メッシュ義歯写真</span>
+        <div class="option-card__icon" style="background: linear-gradient(135deg, #c8d6e5, #8395a7);">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2d3436" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
         </div>
         <h3 class="option-card__title">ステンレスメッシュ義歯</h3>
         <p class="option-card__text">
@@ -456,10 +495,9 @@
           「入れ歯をしていることを忘れる」とおっしゃる方もいらっしゃいます。
         </p>
       </div>
-
       <div class="option-card">
-        <div class="image-placeholder image-placeholder--md" aria-label="インプラントオーバーデンチャー">
-          <span>IOD写真</span>
+        <div class="option-card__icon" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3 class="option-card__title">インプラントオーバーデンチャー</h3>
         <p class="option-card__text">
@@ -469,10 +507,9 @@
           手術の負担も通常のインプラントより少なく済む場合があります。
         </p>
       </div>
-
       <div class="option-card">
-        <div class="image-placeholder image-placeholder--md" aria-label="1日デンチャー">
-          <span>1日デンチャー写真</span>
+        <div class="option-card__icon" style="background: linear-gradient(135deg, #55efc4, #00b894);">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <h3 class="option-card__title">1日デンチャー（即日義歯）</h3>
         <p class="option-card__text">
@@ -492,13 +529,11 @@
   <div class="container">
     <div class="swallow__inner">
       <div class="swallow__content">
+        <div class="section-label section-label--left"><span>SWALLOWING CARE</span></div>
         <h2 class="section-heading section-heading--left">
-          「噛める」その先へ。<br>
-          飲み込む力まで、<br class="sp-only">診ています。
+          「噛める」その先へ。<br>飲み込む力まで、<br class="sp-only">診ています。
         </h2>
-        <p class="swallow__lead">
-          摂食嚥下リハビリテーション認定士が在籍
-        </p>
+        <p class="swallow__lead">摂食嚥下リハビリテーション認定士が在籍</p>
         <p>
           せっかく良い入れ歯やインプラントを入れても、
           <strong>「飲み込む力（嚥下機能）」が低下</strong>していれば、
@@ -516,9 +551,7 @@
         </p>
       </div>
       <div class="swallow__image">
-        <div class="image-placeholder image-placeholder--lg" aria-label="VE検査（嚥下内視鏡）の設備写真">
-          <span>VE検査設備写真</span>
-        </div>
+        <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=800&h=600&fit=crop" alt="VE検査（嚥下内視鏡）の設備" style="border-radius:16px;width:100%;height:auto;">
       </div>
     </div>
 
@@ -526,14 +559,23 @@
       <h3 class="swallow__risks-heading">ご存知ですか？ 嚥下機能の低下が招くリスク</h3>
       <div class="swallow__risks-grid">
         <div class="swallow__risk">
+          <div class="swallow__risk-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
           <h4>誤嚥性肺炎</h4>
           <p>日本人の死因上位。食べ物や唾液が気管に入ることで起こります。適切な嚥下機能の維持がリスク低減に繋がります。</p>
         </div>
         <div class="swallow__risk">
+          <div class="swallow__risk-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="1.5"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
           <h4>低栄養・フレイル</h4>
           <p>噛めない・飲み込めないことで食事量が減り、体力の低下や要介護状態につながることがあります。</p>
         </div>
         <div class="swallow__risk">
+          <div class="swallow__risk-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
           <h4>生活の質の低下</h4>
           <p>家族との食事を楽しめない、外食ができないなど、社会的な孤立にもつながります。</p>
         </div>
@@ -547,28 +589,40 @@
 ======================================== -->
 <section class="doctor" id="doctor">
   <div class="container">
+    <div class="section-label"><span>DOCTOR</span></div>
     <h2 class="section-heading">院長紹介</h2>
     <div class="doctor__inner">
       <div class="doctor__photo">
-        <div class="image-placeholder image-placeholder--portrait" aria-label="院長 田中栄士 ポートレート">
-          <span>院長ポートレート</span>
-        </div>
+        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=480&h=640&fit=crop&crop=face" alt="院長 田中栄士 ポートレート" style="border-radius:16px;max-width:300px;width:100%;height:auto;">
       </div>
       <div class="doctor__profile">
         <p class="doctor__title">歯学博士</p>
         <h3 class="doctor__name">田中 栄士<span class="doctor__name-kana">（たなか えいじ）</span></h3>
         <div class="doctor__credentials">
           <ul>
-            <li>日本老年歯科医学会 専門医・指導医</li>
-            <li>日本摂食嚥下リハビリテーション学会 認定士</li>
-            <li>元・大阪歯科大学 准教授</li>
-            <li>元・大阪歯科大学附属病院 高齢者歯科診療部長</li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              日本老年歯科医学会 専門医・指導医
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d6336c" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              日本摂食嚥下リハビリテーション学会 認定士
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1a2744" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
+              元・大阪歯科大学 准教授
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1a2744" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              元・大阪歯科大学附属病院 高齢者歯科診療部長
+            </li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="doctor__message">
+      <div class="doctor__message-quote">"</div>
       <h3 class="doctor__message-heading">地元たつの市で、<br class="sp-only">大学病院の知見を活かしたい。</h3>
       <p>
         私は長年、大阪歯科大学附属病院で高齢者歯科に携わってきました。
@@ -597,6 +651,7 @@
   8. CTA（アクション喚起）
 ======================================== -->
 <section class="cta" id="cta">
+  <div class="cta__bg-pattern"></div>
   <div class="container">
     <h2 class="cta__heading">まずは、専門医にご相談ください。</h2>
     <p class="cta__text">
@@ -606,11 +661,13 @@
       <strong>あなたに合った治療法を、わかりやすくご説明します。</strong>
     </p>
     <div class="cta__buttons">
-      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--xl">
+      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--xl btn--pulse">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:middle;"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         WEB予約はこちら
         <span class="btn__sub">24時間受付</span>
       </a>
-      <a href="tel:0791-64-6800" class="btn btn--outline btn--xl">
+      <a href="tel:0791-64-6800" class="btn btn--outline-white btn--xl">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:middle;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         お電話でのご予約
         <span class="btn__sub">0791-64-6800</span>
       </a>
@@ -626,9 +683,7 @@
   </div>
 </section>
 
-<!-- ========================================
-  FOOTER
-======================================== -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <p class="footer__copy">&copy; たなか歯科クリニック All Rights Reserved.</p>
@@ -637,8 +692,14 @@
 
 <!-- 固定CTAバー（スマートフォン用） -->
 <div class="fixed-cta">
-  <a href="tel:0791-64-6800" class="fixed-cta__tel">電話予約</a>
-  <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="fixed-cta__web">WEB予約</a>
+  <a href="tel:0791-64-6800" class="fixed-cta__tel">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a2744" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    電話予約
+  </a>
+  <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="fixed-cta__web">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    WEB予約
+  </a>
 </div>
 
 </body>
