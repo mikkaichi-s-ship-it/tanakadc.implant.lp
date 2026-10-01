@@ -376,6 +376,41 @@ ul {
   margin-top: 8px;
 }
 
+.hero__lead strong {
+  color: #ffd43b;
+}
+
+.hero__points {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.hero__points li {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius);
+  padding: 10px 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.hero__tel {
+  display: block;
+  margin-top: 12px;
+  color: inherit;
+  font-size: 0.875rem;
+  text-decoration: underline;
+}
+
+.hero__tel strong {
+  font-size: 1.125rem;
+}
+
 @media (min-width: 768px) {
   .hero { padding: 72px 0 96px; }
   .hero__inner {
@@ -392,6 +427,7 @@ ul {
     margin-top: 0;
   }
   .hero__cta { text-align: left; }
+  .hero__points li { font-size: 0.875rem; }
 }
 
 @media (min-width: 1024px) {
@@ -779,6 +815,146 @@ ul {
   line-height: 1.9;
 }
 
+.comparison__tel,
+.mid-cta__tel {
+  display: block;
+  margin-top: 12px;
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ========================================
+   4-2. IMPLANT FLOW
+======================================== */
+.flow {
+  padding: 64px 0;
+  background: var(--off-white);
+}
+
+.flow__list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.flow__step {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  border-left: 4px solid var(--navy);
+}
+
+.flow__num {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--magenta);
+  letter-spacing: 0.08em;
+}
+
+.flow__step h3 {
+  font-size: 1.0625rem;
+  color: var(--navy);
+  margin: 4px 0 6px;
+}
+
+.flow__step p {
+  font-size: 0.9375rem;
+  color: var(--text-light);
+}
+
+@media (min-width: 768px) {
+  .flow__list { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ========================================
+   4-3. PRICE & RISK
+======================================== */
+.price {
+  padding: 64px 0;
+}
+
+.price-table-wrap {
+  max-width: 720px;
+  margin: 32px auto 0;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid var(--gray-light);
+  padding: 14px 16px;
+  text-align: left;
+}
+
+.price-table th {
+  background: var(--off-white);
+  color: var(--navy);
+  width: 55%;
+}
+
+.price-table th small {
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.price-table td {
+  font-weight: 700;
+}
+
+.price__notes {
+  list-style: none;
+  margin-top: 12px;
+  font-size: 0.8125rem;
+  color: var(--text-light);
+}
+
+.price__notes li::before {
+  content: '※ ';
+}
+
+.risk {
+  max-width: 720px;
+  margin: 40px auto 0;
+  background: var(--off-white);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.risk__heading {
+  font-size: 1.0625rem;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.risk__list dt {
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.risk__list dd {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.mid-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mid-cta__text {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
 /* ========================================
    5. OPTIONS
 ======================================== */
@@ -1009,6 +1185,61 @@ ul {
 /* ========================================
    8. CTA
 ======================================== */
+/* ========================================
+   7-2. FAQ
+======================================== */
+.faq {
+  padding: 64px 0;
+  background: var(--white);
+}
+
+.faq__list {
+  max-width: 760px;
+  margin: 32px auto 0;
+}
+
+.faq__item {
+  background: var(--off-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 12px;
+}
+
+.faq__item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 16px 44px 16px 20px;
+  font-weight: 700;
+  color: var(--navy);
+  position: relative;
+}
+
+.faq__item summary::-webkit-details-marker { display: none; }
+
+.faq__item summary::before {
+  content: 'Q. ';
+  color: var(--magenta);
+}
+
+.faq__item summary::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+}
+
+.faq__item[open] summary::after {
+  content: '−';
+}
+
+.faq__item p {
+  padding: 0 20px 18px;
+  font-size: 0.9375rem;
+  color: var(--text-light);
+}
+
 .cta {
   padding: 64px 0;
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
@@ -1100,6 +1331,7 @@ ul {
 }
 
 .fixed-cta__web {
+  flex: 1.6;
   background: var(--magenta);
   color: var(--white);
 }
