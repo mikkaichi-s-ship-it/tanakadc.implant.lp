@@ -1,0 +1,36 @@
+Level,Negative keyword,Match type,Reason
+Campaign,求人,Phrase,求職者
+Campaign,歯科衛生士,Phrase,求職者
+Campaign,歯科助手,Phrase,求職者
+Campaign,バイト,Phrase,求職者
+Campaign,転職,Phrase,求職者
+Campaign,学会,Phrase,医療者向け
+Campaign,セミナー,Phrase,医療者向け
+Campaign,講習,Phrase,医療者向け
+Campaign,メーカー,Phrase,業者・医療者向け
+Campaign,ストローマン,Phrase,メーカー名検索（医療者・情報収集）
+Campaign,ノーベル,Phrase,メーカー名検索
+Campaign,論文,Phrase,情報収集
+Campaign,とは,Phrase,情報収集（CV 率が低い。CPA を見て解除可）
+Campaign,失敗,Phrase,ネガティブ情報収集
+Campaign,訴訟,Phrase,ネガティブ情報収集
+Campaign,後悔,Phrase,ネガティブ情報収集
+Campaign,知恵袋,Phrase,情報収集
+Campaign,ブログ,Phrase,情報収集
+Campaign,無料,Phrase,当院は無料相談を実施していないため（実施する場合は削除）
+Campaign,激安,Phrase,価格のみ重視層
+Campaign,海外,Phrase,
+Campaign,韓国,Phrase,
+Campaign,豊胸,Phrase,他分野のインプラント
+Campaign,バスト,Phrase,他分野のインプラント
+Campaign,乳房,Phrase,他分野のインプラント
+Campaign,人工関節,Phrase,他分野のインプラント
+Campaign,髪,Phrase,他分野（植毛）
+Campaign,ネイル,Phrase,他分野
+Campaign,ゲーム,Phrase,他分野
+Campaign,神戸,Phrase,商圏外
+Campaign,大阪,Phrase,商圏外
+Campaign,岡山,Phrase,商圏外
+Campaign,加古川,Phrase,商圏外
+Campaign,明石,Phrase,商圏外
+Campaign,赤穂,Phrase,商圏外（来院実績があれば削除）

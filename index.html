@@ -3,8 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="兵庫県たつの市のたなか歯科クリニック。インプラント・入れ歯・ブリッジ、歯を失った方の治療選択を専門医がサポート。大学病院レベルの診断力で、あなたに合った治療法をご提案します。">
-  <title>歯を失ってお困りの方へ｜たなか歯科クリニック（兵庫県たつの市）</title>
+  <meta name="description" content="たつの市でインプラントをご検討中の方へ。たなか歯科クリニック（たつの市龍野町）は歯科用CTで骨の状態を立体的に診断し、持病・服薬中の方も全身状態を踏まえて治療計画をご提案。入れ歯・ブリッジとの比較もご説明します。">
+  <title>たつの市のインプラント｜CT診断・持病のある方もご相談ください｜たなか歯科クリニック</title>
+
+  <!--
+    Google 広告 コンバージョン計測
+    GOOGLE_ADS_ID / 各コンバージョンラベルを Google 広告管理画面の値に差し替えてください。
+    （差し替えるまでは計測タグを読み込みません）
+  -->
+  <script>
+    window.TANAKA_ADS = {
+      GOOGLE_ADS_ID: 'AW-XXXXXXXXXX',
+      CONVERSION_LABEL_WEB: 'XXXXXXXXXXXXXXXXXXXX',
+      CONVERSION_LABEL_TEL: 'XXXXXXXXXXXXXXXXXXXX'
+    };
+    (function (cfg) {
+      if (!/^AW-\d+$/.test(cfg.GOOGLE_ADS_ID)) return;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + cfg.GOOGLE_ADS_ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', cfg.GOOGLE_ADS_ID);
+    })(window.TANAKA_ADS);
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "たなか歯科クリニック",
+    "url": "https://www.dentalclinic-tanaka.jp/",
+    "telephone": "0791-64-6800",
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "679-4167",
+      "addressRegion": "兵庫県",
+      "addressLocality": "たつの市",
+      "streetAddress": "龍野町富永878-1",
+      "addressCountry": "JP"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday"], "opens": "09:00", "closes": "13:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday"], "opens": "14:30", "closes": "19:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00", "closes": "13:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "14:30", "closes": "18:00" }
+    ],
+    "medicalSpecialty": "Dentistry",
+    "availableService": [
+      { "@type": "MedicalProcedure", "name": "インプラント治療" },
+      { "@type": "MedicalProcedure", "name": "入れ歯（義歯）" },
+      { "@type": "MedicalProcedure", "name": "ブリッジ" }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
@@ -19,14 +74,14 @@
   <div class="header__inner">
     <div class="header__logo">
       <span class="header__logo-main">たなか歯科クリニック</span>
-      <span class="header__logo-sub">兵庫県たつの市｜歯学博士・老年歯科専門医</span>
+      <span class="header__logo-sub">兵庫県たつの市｜インプラント・入れ歯・ブリッジ</span>
     </div>
     <div class="header__contact">
-      <a href="tel:0791-64-6800" class="header__tel">
+      <a href="tel:0791-64-6800" class="header__tel" data-cv="tel">
         <span class="header__tel-icon">&#9742;</span>
         <span class="header__tel-number">0791-64-6800</span>
       </a>
-      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--header">WEB予約</a>
+      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--header" data-cv="web">WEB予約</a>
     </div>
   </div>
 </header>
@@ -37,18 +92,24 @@
 <section class="hero" id="hero">
   <div class="hero__inner">
     <div class="hero__content">
-      <p class="hero__lead">兵庫県たつの市で、歯を失ってお悩みの方へ</p>
+      <p class="hero__lead">たつの市でインプラントをご検討中の方へ</p>
       <h1 class="hero__heading">
-        大学病院で培った<br class="sp-only">診断力で、<br>
-        あなたに合った<br class="sp-only">治療法を<br class="sp-only">見つけます。
+        そのインプラント、<br class="sp-only">本当にあなたに<br class="sp-only">合っていますか？<br>
+        <span class="hero__heading-em">CTと専門医の診断で、<br class="sp-only">最適な治療法を。</span>
       </h1>
       <p class="hero__sub">
-        インプラント・入れ歯・ブリッジ——<br>
-        老年歯科<span class="marker">専門医・指導医</span>が、<br class="sp-only">一人ひとりに寄り添いご提案します。
+        骨の状態・持病・服用中のお薬まで総合的に診断。<br>
+        インプラントが適さない場合は、入れ歯・ブリッジも含めて<br class="pc-only">正直にご提案します。
       </p>
+      <ul class="hero__points">
+        <li>歯科用CTで<br><strong>骨を立体診断</strong></li>
+        <li>持病・服薬中の方も<br><strong>ご相談可能</strong></li>
+        <li>元・大学病院<br><strong>診療部長が担当</strong></li>
+      </ul>
       <div class="hero__cta">
-        <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--lg">まずは無料相談を予約する</a>
-        <p class="hero__cta-note">※ 初回カウンセリングは保険適用内で行えます</p>
+        <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--lg" data-cv="web">インプラント相談を予約する</a>
+        <a href="tel:0791-64-6800" class="hero__tel" data-cv="tel">お電話：0791-64-6800</a>
+        <p class="hero__cta-note">※ 初回の診査・カウンセリングは保険診療の範囲内で行います。<br>※ インプラントは自由診療です（費用・リスクは<a href="#implant-info">こちら</a>）。</p>
       </div>
     </div>
     <div class="hero__image">
@@ -414,9 +475,117 @@
     <div class="comparison__cta">
       <p class="comparison__cta-text">
         <strong>どの治療法が自分に合うのか、わからなくて当然です。</strong><br>
-        まずは専門医に相談してみませんか？
+        まずは老年歯科の専門医にご相談ください。
       </p>
-      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--lg">無料相談を予約する</a>
+      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--lg" data-cv="web">インプラント相談を予約する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+  4-2. インプラント治療の流れ・費用・リスク
+  （医療広告ガイドラインの限定解除要件：自由診療の内容・費用・期間・リスクの明示）
+======================================== -->
+<section class="implant-info" id="implant-info">
+  <div class="container">
+    <h2 class="section-heading">インプラント治療の<br class="sp-only">流れと費用</h2>
+    <p class="section-lead">ご相談から治療完了まで、すべてを事前にご説明します。</p>
+
+    <ol class="flow">
+      <li class="flow__step">
+        <span class="flow__num">STEP 1</span>
+        <h3>ご相談・診査</h3>
+        <p>お悩みやご希望を伺い、お口の中を診査します。持病やお薬手帳もお持ちください。</p>
+      </li>
+      <li class="flow__step">
+        <span class="flow__num">STEP 2</span>
+        <h3>CT撮影・精密診断</h3>
+        <p>歯科用CTで骨の量・質、神経や血管の位置を立体的に確認します。</p>
+      </li>
+      <li class="flow__step">
+        <span class="flow__num">STEP 3</span>
+        <h3>治療計画のご説明</h3>
+        <p>インプラント・入れ歯・ブリッジを比較し、費用と期間を含めてご説明します。ご納得いただけるまで治療は始めません。</p>
+      </li>
+      <li class="flow__step">
+        <span class="flow__num">STEP 4</span>
+        <h3>手術（埋入）</h3>
+        <p>局所麻酔下で人工歯根を埋入します。全身状態に配慮しながら進めます。</p>
+      </li>
+      <li class="flow__step">
+        <span class="flow__num">STEP 5</span>
+        <h3>人工歯の装着</h3>
+        <p>骨と結合する期間（目安 2〜6ヶ月）を経て、人工歯を装着します。</p>
+      </li>
+      <li class="flow__step">
+        <span class="flow__num">STEP 6</span>
+        <h3>定期メンテナンス</h3>
+        <p>長く使っていただくため、定期的な検診・クリーニングを行います。</p>
+      </li>
+    </ol>
+
+    <div class="implant-info__grid">
+      <div class="implant-info__box">
+        <h3>費用（自由診療・税込）</h3>
+        <!-- TODO(医院確認): 実際の料金に差し替えてから広告配信を開始してください -->
+        <table class="price-table">
+          <tr><th>CT撮影・精密診断</th><td>〇〇,〇〇〇円</td></tr>
+          <tr><th>インプラント 1本<br><small>（手術・上部構造含む）</small></th><td>〇〇〇,〇〇〇円〜</td></tr>
+          <tr><th>インプラントオーバーデンチャー</th><td>〇〇〇,〇〇〇円〜</td></tr>
+        </table>
+        <p class="implant-info__note">
+          ※ 骨造成など追加処置が必要な場合は別途費用がかかります。必ず事前にお見積りをお渡しします。<br>
+          ※ インプラント治療は<strong>医療費控除</strong>の対象となる場合があります。<br>
+          ※ デンタルローン等のお支払い方法についてはお問い合わせください。
+        </p>
+      </div>
+      <div class="implant-info__box">
+        <h3>治療期間・通院回数の目安</h3>
+        <p>治療期間：<strong>3〜6ヶ月程度</strong>（骨造成を伴う場合は6ヶ月〜1年程度）<br>
+          通院回数：<strong>5〜10回程度</strong></p>
+        <p class="implant-info__note">※ お口や全身の状態により異なります。</p>
+        <h3>主なリスク・副作用</h3>
+        <ul class="implant-info__risks">
+          <li>外科手術を伴うため、術後に腫れ・痛み・内出血が生じることがあります。</li>
+          <li>骨や全身の状態（糖尿病、骨粗しょう症のお薬、喫煙など）により、治療ができない・結果に影響する場合があります。</li>
+          <li>まれに神経の損傷によるしびれ、上顎洞への影響が生じることがあります。</li>
+          <li>清掃が不十分な場合、インプラント周囲炎により脱落することがあります。定期的なメンテナンスが必要です。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+  4-3. よくあるご質問（インプラント）
+======================================== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <h2 class="section-heading">インプラントの<br class="sp-only">よくあるご質問</h2>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary>高齢でもインプラントはできますか？</summary>
+        <p>年齢だけで判断することはありません。骨の状態や全身の健康状態、今後の通院のしやすさまで含めて診断します。老年歯科の専門医として、将来介護が必要になった場合のお手入れのしやすさも考慮してご提案します。</p>
+      </details>
+      <details class="faq__item">
+        <summary>糖尿病や高血圧、骨粗しょう症の薬を飲んでいますが大丈夫ですか？</summary>
+        <p>病状のコントロール状態やお薬の種類によって判断が異なります。必要に応じて主治医の先生と連携し、安全性を確認したうえで治療方針を決めます。お薬手帳をお持ちください。</p>
+      </details>
+      <details class="faq__item">
+        <summary>手術は痛いですか？</summary>
+        <p>局所麻酔を行いますので、手術中の痛みはほとんど感じない方が多いです。術後の腫れや痛みには、お薬で対応します。</p>
+      </details>
+      <details class="faq__item">
+        <summary>相談したら必ずインプラントをしなければいけませんか？</summary>
+        <p>いいえ。診断の結果、入れ歯やブリッジの方が適している場合はそのようにお伝えします。治療法をお決めいただくのは、ご説明を聞いて納得されてからで構いません。</p>
+      </details>
+      <details class="faq__item">
+        <summary>他院でインプラントは難しいと言われました。</summary>
+        <p>骨の量が少ない場合でも、CTで詳しく診断することで治療の可能性が見つかる場合があります。もちろん、難しい場合でもインプラントオーバーデンチャーや精密義歯など、別の選択肢をご提案します。</p>
+      </details>
+    </div>
+    <div class="comparison__cta">
+      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--lg" data-cv="web">インプラント相談を予約する</a>
     </div>
   </div>
 </section>
@@ -606,11 +775,11 @@
       <strong>あなたに合った治療法を、わかりやすくご説明します。</strong>
     </p>
     <div class="cta__buttons">
-      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--xl">
+      <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="btn btn--cta btn--xl" data-cv="web">
         WEB予約はこちら
         <span class="btn__sub">24時間受付</span>
       </a>
-      <a href="tel:0791-64-6800" class="btn btn--outline btn--xl">
+      <a href="tel:0791-64-6800" class="btn btn--outline btn--xl" data-cv="tel">
         お電話でのご予約
         <span class="btn__sub">0791-64-6800</span>
       </a>
@@ -637,9 +806,20 @@
 
 <!-- 固定CTAバー（スマートフォン用） -->
 <div class="fixed-cta">
-  <a href="tel:0791-64-6800" class="fixed-cta__tel">電話予約</a>
-  <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="fixed-cta__web">WEB予約</a>
+  <a href="tel:0791-64-6800" class="fixed-cta__tel" data-cv="tel">電話予約</a>
+  <a href="https://www.mrweb-yoyakuv.com/sikatanaka/login/" target="_blank" rel="noopener" class="fixed-cta__web" data-cv="web">WEB予約</a>
 </div>
+
+<script>
+  // Google 広告：電話タップ・WEB予約クリックをコンバージョンとして送信
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-cv]');
+    if (!el || typeof window.gtag !== 'function') return;
+    var cfg = window.TANAKA_ADS;
+    var label = el.getAttribute('data-cv') === 'tel' ? cfg.CONVERSION_LABEL_TEL : cfg.CONVERSION_LABEL_WEB;
+    gtag('event', 'conversion', { send_to: cfg.GOOGLE_ADS_ID + '/' + label });
+  });
+</script>
 
 </body>
 </html>

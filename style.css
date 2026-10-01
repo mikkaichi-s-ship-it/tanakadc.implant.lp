@@ -365,6 +365,49 @@ ul {
   line-height: 1.5;
 }
 
+.hero__heading-em {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.75em;
+  color: #ffd8e6;
+}
+
+.hero__points {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.hero__points li {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: var(--radius);
+  padding: 10px 6px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.hero__points strong {
+  color: var(--white);
+  font-size: 0.8125rem;
+}
+
+.hero__tel {
+  display: block;
+  margin-top: 12px;
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.hero__cta-note a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
 .hero__cta {
   margin-top: 24px;
   text-align: center;
@@ -392,6 +435,8 @@ ul {
     margin-top: 0;
   }
   .hero__cta { text-align: left; }
+  .hero__points li { font-size: 0.875rem; }
+  .hero__points strong { font-size: 0.9375rem; }
 }
 
 @media (min-width: 1024px) {
@@ -777,6 +822,176 @@ ul {
   font-size: 1.0625rem;
   margin-bottom: 24px;
   line-height: 1.9;
+}
+
+/* ========================================
+   4-2. IMPLANT INFO（流れ・費用・リスク）
+======================================== */
+.implant-info {
+  padding: 64px 0;
+  background: var(--off-white);
+}
+
+.flow {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.flow__step {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  border-top: 4px solid var(--navy);
+}
+
+.flow__num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--magenta);
+  letter-spacing: 0.1em;
+}
+
+.flow__step h3 {
+  font-size: 1.0625rem;
+  color: var(--navy);
+  margin: 4px 0 8px;
+}
+
+.flow__step p {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.implant-info__grid {
+  display: grid;
+  gap: 24px;
+}
+
+.implant-info__box {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.implant-info__box h3 {
+  font-size: 1.125rem;
+  color: var(--navy);
+  border-left: 4px solid var(--magenta);
+  padding-left: 12px;
+  margin: 0 0 16px;
+}
+
+.implant-info__box h3:not(:first-child) {
+  margin-top: 24px;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.price-table th,
+.price-table td {
+  border-bottom: 1px solid var(--gray-light);
+  padding: 12px 8px;
+  font-size: 0.9375rem;
+  text-align: left;
+}
+
+.price-table td {
+  text-align: right;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.implant-info__note {
+  font-size: 0.8125rem;
+  color: var(--text-light);
+}
+
+.implant-info__risks {
+  list-style: none;
+}
+
+.implant-info__risks li {
+  position: relative;
+  padding-left: 1.25em;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
+.implant-info__risks li::before {
+  content: '・';
+  position: absolute;
+  left: 0;
+  color: var(--demerit);
+}
+
+@media (min-width: 768px) {
+  .implant-info { padding: 96px 0; }
+  .flow { grid-template-columns: repeat(3, 1fr); }
+  .implant-info__grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ========================================
+   4-3. FAQ
+======================================== */
+.faq {
+  padding: 64px 0;
+}
+
+.faq__list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.faq__item summary {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding: 20px 32px 20px 2em;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.faq__item summary::-webkit-details-marker { display: none; }
+
+.faq__item summary::before {
+  content: 'Q';
+  position: absolute;
+  left: 0;
+  color: var(--magenta);
+  font-family: var(--font-serif);
+}
+
+.faq__item summary::after {
+  content: '+';
+  position: absolute;
+  right: 8px;
+  font-size: 1.25rem;
+}
+
+.faq__item[open] summary::after {
+  content: '−';
+}
+
+.faq__item p {
+  padding: 0 8px 20px 2em;
+  font-size: 0.9375rem;
+  color: var(--text-light);
+}
+
+@media (min-width: 768px) {
+  .faq { padding: 96px 0; }
 }
 
 /* ========================================
